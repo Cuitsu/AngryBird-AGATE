@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -68,6 +69,7 @@ public class GameController : MonoBehaviour
         if (Enemies.Count == 0)
         {
             _isGameEnded = true;
+            SceneManager.LoadScene("Level 2");
         }
     }
 
